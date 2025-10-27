@@ -1,0 +1,10 @@
+[package]
+name = "http-request-dumper"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+hyper = { version = "0.14", features = ["http1", "server", "tcp"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
